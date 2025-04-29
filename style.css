@@ -4,11 +4,25 @@
     box-sizing: border-box;
   }
   body {
+    background-image: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
     font-family: 'Poppins', sans-serif;
-    background: #fff;
-    color: #333;
   }
-  
+  .overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color:rgb(10, 20, 10);
+    opacity: 0.8;
+    z-index: -1;
+  }
   a {
     text-decoration: none;
     color: inherit;
@@ -21,17 +35,15 @@
   }
   
   /* Navbar */
-  .navbar {
-    background: #000;
-    color: #fff;
-    padding: 1rem 0;
-  }
   .navbar .container {
+    padding: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   .navbar .logo {
+    color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -43,6 +55,15 @@
   .nav-links li a {
     color: #fff;
     font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .nav-links li a:hover{
+    background-color: #194646;
+    border-radius: 10px;
+  }
+  .navbar i {
+    font-size: 1.5rem;
+    color: #fff;
   }
   
   /* Hero */
@@ -55,12 +76,33 @@
     text-align: center;
     color: #fff;
   }
-  .hero-text h2 {
-    font-size: 3rem;
+  .hero-text {
+    margin: 0px 0px 0px 0px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction:row;
   }
-  .hero-text p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+  .hero-text a {
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    margin : 0px 10px;
+    border: 1px solid #fff;
+    border-radius:20px;
+  }
+  .hero-text a:hover{
+    background-color: #194646;
+  }
+  .hero1 {
+    padding:100px;
+    width: 700px;
+    color: #fff;
+  }
+  .hero-text .hero-buttons {
+    padding:100px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .hero-image {
+    padding : 0px 300px 0px 0px;
   }
   .btn {
     display: inline-block;
