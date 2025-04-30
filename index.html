@@ -28,126 +28,155 @@
         <li><a href="#about">Blog</a></li>
         <li><a href="#about">Pages</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact">Hire Me</a></li>
+        <li><a href="#contact" class="btn-primary">Hire Me</a></li>
         <i><a href="#search" class = "fa fa-search"></a></i>
-        <i><a href="#search" class="fa fa-moon" aria-hidden="true"></a></i>
+        <i id="dark-mode-toggle" class="fa fa-moon" aria-hidden="true"></i>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-    <div class="hero-text">
-      <div class = "hero1">
+  <section id="hero" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
         <h2>Hi, I'm John Watson</h2>
-        <h1>Web De</h1>
+        <h1><span class="typing"></span></h1>
         <p>I love Graphic Design and photography and I have been working on my portfolio since 2016. I can give your business a new Creative start right away!</p>
-      <div class="hero-buttons">
-        <a href="#contact">Hire Me</a>
-        <a href="#portfolio">My Portfolio</a>
-      </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Hire Me</a>
+          <a href="#portfolio" class="btn-outline">My Portfolio</a>
+        </div>
       </div>
       <div class="hero-image">
-        <img src="intro.png" alt = "John">
+        <img src="intro.png" alt="John">
       </div>
     </div>
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container about-content">
-          <div class="about-text">
-            <h2>MY BIOGRAPHY</h2>
-            <p>A Lead UI Designer & Web Developer based in UK</p>
-            <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
-            <img src="biography.jpg" alt = "Watson">
-            <div class="about-info">
-            <div class="info-row">
-                <p><strong>Name:</strong> John Watson</p>
-                <p><strong>From:</strong> London, UK</p>
-                </div>
-            <div class="info-row">
-                  <p><strong>Email:</strong> example@email.com</p>
-                  <p><strong>Phone:</strong> +21 234 567 8901</p>
-            </div>
-            </div>
-            <div class="social-icons">
-                <p><strong>Follow me on</strong></p>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram"></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook"></a>
-                <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
-              </div>
-            <a href="#" class="btn">Hire Me</a>
-            <a href="#" class="btn">Download CV</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="biography.jpg" alt="John Watson">
+      </div>
+      <div class="about-content">
+        <h2>MY BIOGRAPHY</h2>
+        <h3>A Lead UI Designer & Web Developer based in UK</h3>
+        <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away! Contact me and we will discuss your projects!</p>
+        
+        <div class="about-info">
+          <div class="info-row">
+            <p><strong>Name:</strong> John Watson</p>
+            <p><strong>From:</strong> London, UK</p>
+          </div>
+          <div class="info-row">
+            <p><strong>Email:</strong> example@email.com</p>
+            <p><strong>Phone:</strong> +21 234 567 8901</p>
           </div>
         </div>
-      </section>
-    
-      <!-- Services Section -->
-      <section id="services" class="services">
-        <div class="container">
-          <h2>What I do For You</h2>
-          <div class="service-grid">
-            <div class="service-card">
-              <h3>Web Development</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
-            </div>
-            <div class="service-card">
-              <h3>App Development</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
-            </div>
-            <div class="service-card">
-                <h3>Photography</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
-            </div>
-            <div class="more-services">
-                <a href="#services">
-                  <span>More Services</span> <span class="arrow">→</span>
-                </a>
-              </div>
+        
+        <div class="social-links">
+          <span>Follow me on</span>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-      </section>
+        
+        <div class="about-buttons">
+          <a href="#" class="btn-primary">Hire Me</a>
+          <a href="#" class="btn-outline">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>What I do For You</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>App Development</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Photography</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit accusa ntium dolor emque laudan.</p>
+        </div>
+      </div>
+      <div class="more-services">
+        <a href="#services">
+          <span>More Services</span> <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>MY SKILLS</h2>
+      <div class="skills-container">
+        <div class="skills-image">
+          <img src="skills.jpg" alt="Featured skills">
+        </div>
+        <div class="skills-content">
+          <h3>My Featured Skills</h3>
+          <p>I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I'm always ready to impress the audience with my Creativity.</p>
     
-      <!-- Skills Section -->
-      <section id="skills" class="skills-section">
-        <div class="container">
-          <h2>MY SKILLS</h2>
-          <img src="skills.jpg" alt = "Featured skills">
-          <p class="skills-intro">
-            <strong>My Featured Skills</strong><br>
-            I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work.
-            And I'm always ready to impress the audience with my Creativity.
-          </p>
-      
           <div class="skills-list">
             <div class="skill">
               <h4>UI/UX Design</h4>
               <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+              <span>80%</span>
             </div>
-      
+    
             <div class="skill">
               <h4>Ideas & Technology</h4>
               <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+              <span>95%</span>
             </div>
-      
+    
             <div class="skill">
               <h4>Branding Design</h4>
               <div class="progress-bar"><div class="progress" style="width: 58%;"></div></div>
+              <span>58%</span>
             </div>
-      
+    
             <div class="skill">
               <h4>Responsive Web Design</h4>
               <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+              <span>80%</span>
             </div>
           </div>
         </div>
-      </section>
-        
+      </div>
+    </div>
+  </section>
+    
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio-section">
     <div class="container">
       <h2>My Portfolio</h2>
-      <img src="portfolio.png" alt = "Portfolio">
+      <div class="portfolio-image">
+        <img src="portfolio.png" alt="Portfolio">
+      </div>
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <img src="https://img.icons8.com/ios/50/web.png" alt="Web Development Icon">
+          <img src="https://img.icons8.com/?size=100&id=53451&format=png&color=000000" alt="Web Development Icon">
           <div class="portfolio-text">
             <h4>Web Development</h4>
             <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
@@ -155,7 +184,7 @@
         </div>
   
         <div class="portfolio-item">
-          <img src="https://img.icons8.com/ios/50/design.png" alt="Design Trends Icon">
+          <img src="https://img.icons8.com/?size=100&id=2799&format=png&color=000000" alt="Design Trends Icon">
           <div class="portfolio-text">
             <h4>Design Trends</h4>
             <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
@@ -163,7 +192,7 @@
         </div>
   
         <div class="portfolio-item">
-          <img src="https://img.icons8.com/ios/50/research.png" alt="Research Icon">
+          <img src="https://img.icons8.com/?size=100&id=2PoOVhFsZ1Vj&format=png&color=000000" alt="Research Icon">
           <div class="portfolio-text">
             <h4>Research & Analysis</h4>
             <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
@@ -171,7 +200,7 @@
         </div>
   
         <div class="portfolio-item">
-          <img src="https://img.icons8.com/ios/50/technical-support.png" alt="Customer Support Icon">
+          <img src="https://img.icons8.com/?size=100&id=11162&format=png&color=000000" alt="Customer Support Icon">
           <div class="portfolio-text">
             <h4>Customer Support</h4>
             <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
@@ -179,7 +208,7 @@
         </div>
   
         <div class="portfolio-item">
-          <img src="https://img.icons8.com/ios/50/responsive.png" alt="Responsive Design Icon">
+          <img src="https://img.icons8.com/?size=100&id=24756&format=png&color=000000" alt="Responsive Design Icon">
           <div class="portfolio-text">
             <h4>Responsive Design</h4>
             <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
@@ -187,14 +216,13 @@
         </div>
   
         <div class="portfolio-item">
-          <img src="https://img.icons8.com/ios/50/photoshop.png" alt="PSD Design Icon">
+          <img src="https://img.icons8.com/?size=100&id=2916&format=png&color=000000" alt="PSD Design Icon">
           <div class="portfolio-text">
             <h4>PSD Design</h4>
             <p>Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
           </div>
         </div>
       </div>
-  
     </div>
   </section>  
   <!-- Counter Section -->
@@ -253,8 +281,6 @@
             </div>
           </section>
           
-</section>
-
       <!-- Footer -->
       <footer class="footer-section">
         <div class="container">
@@ -266,45 +292,18 @@
           <div class="footer-bottom">
             <p>© 2025 UI Portfolio. All Rights Reserved | WordPress</p>
             <div class="footer-social">
-              <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png" alt="Facebook"></a>
-              <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png" alt="Twitter"></a>
-              <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/google-plus.png" alt="Google+"></a>
-              <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/pinterest--v1.png" alt="Pinterest"></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
             </div>
           </div>
-          
         </div>
       </footer>
       
     <!-- Java Script for counter section -->
-    <script>
-        const counters = document.querySelectorAll('.counter');
-        let started = false;
-      
-        function runCounters() {
-          if (!started && window.scrollY + window.innerHeight > document.getElementById("stats").offsetTop) {
-            started = true;
-            counters.forEach(counter => {
-              const target = +counter.getAttribute('data-target');
-              let count = 0;
-      
-              const update = () => {
-                const increment = target / 50;
-                count += increment;
-                if (count < target) {
-                  counter.textContent = Math.ceil(count);
-                  requestAnimationFrame(update);
-                } else {
-                  counter.textContent = target;
-                }
-              };
-              update();
-            });
-          }
-        }
-      
-        window.addEventListener('scroll', runCounters);
-      </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
       
 </body>
 </html>
