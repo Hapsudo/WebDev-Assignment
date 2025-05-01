@@ -1,12 +1,12 @@
 # CIPHER WIZRADS GROUP ♖😎
 
 # Collaborators
-1️⃣James Mbitu 
+1️⃣James Mbitu - mbitumutonga@gmail.com
 2️⃣David Nganga – dngangajm@gmail.com
 3️⃣Catherine Abugah – catherine.abugah8@gmail.com
 
 # Reverse Engineering Portfolio Website
-This project involves the reverse engineering of a portfolio website. The goal was to break down an existing website design and recreate its features using HTML, CSS, and JavaScript. We, as a team, worked together to recreate the structure, layout, and interactivity of the given design.
+This project involves the reverse engineering of a portfolio website. The goal was to break down an existing website design and recreate its features using HTML, CSS, and JavaScript. We, as a team, worked together to recreate the structure, layout, and interactivity of the given design. Our final answers are in the **main branch**
 
 ## Project Overview
 The initial web design was provided to us as a set of images. Our task was to reverse engineer the design, writing the necessary code to recreate it while ensuring responsiveness, functionality, and a smooth user experience.
