@@ -1,4 +1,4 @@
-# CIPHER WIZRADS GROUP ♖😎
+# CIPHER WIZARDS GROUP ♖😎
 
 # Collaborators
 1️⃣James Mbitu - mbitumutonga@gmail.com
