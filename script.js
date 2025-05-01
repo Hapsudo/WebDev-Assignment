@@ -57,7 +57,7 @@ function type() {
 //typing animation 
 document.addEventListener("DOMContentLoaded", () => {
     const typingElement = document.querySelector(".typing");
-    const words = ["Web Designer", "Photographer"]; // Words to type
+    const words = ["Web Designer", "Photographer","Freelancer"]; // Words to type
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -117,5 +117,69 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(this.getAttribute("href")).scrollIntoView({
         behavior: "smooth"
       });
+    });
+  });
+  //implementing the search bar functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    // Search feature
+    const searchToggle = document.getElementById("search-toggle");
+    const searchForm = document.getElementById("search-form");
+    const searchInput = document.getElementById("search-input");
+    const searchClose = document.getElementById("search-close");
+  
+    searchToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      searchForm.style.display = "flex";
+      searchInput.focus();
+    });
+  
+    searchClose.addEventListener("click", function () {
+      searchForm.style.display = "none";
+      searchInput.value = "";
+    });
+  
+    document.addEventListener("mousedown", function (e) {
+      if (
+        searchForm.style.display === "flex" &&
+        !searchForm.contains(e.target) &&
+        e.target !== searchToggle
+      ) {
+        searchForm.style.display = "none";
+        searchInput.value = "";
+      }
+    });
+  
+    // Enhanced search: scroll to section if found
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const value = searchInput.value.trim().toLowerCase();
+      const sectionMap = {
+        "home": "hero",
+        "hero": "hero",
+        "about": "about",
+        "services": "services",
+        "portfolio": "portfolio",
+        "contact": "contact",
+        "skills": "skills",
+        "success": "success-work",
+        "success work": "success-work",
+        "banner": "green-banner"
+      };
+      let found = false;
+      for (const key in sectionMap) {
+        if (value === key) {
+          const section = document.getElementById(sectionMap[key]);
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+            found = true;
+            break;
+          }
+        }
+      }
+      if (!found) {
+        alert("Section not found!");
+      }
+      searchForm.style.display = "none";
+      searchInput.value = "";
     });
   });
