@@ -61,7 +61,7 @@ a {
   align-items: center;
   font-size: 1.7rem;
   font-weight: 700;
-  color: #038365;
+  color: #fff;
   text-decoration: none;
   gap: 10px;
 }
@@ -71,7 +71,7 @@ a {
   width: 40px;
   object-fit: contain;
   border-radius: 50%;
-  background: #038365;
+  background: none;
   box-shadow: 0 2px 8px rgba(3,131,101,0.08);
 }
 
